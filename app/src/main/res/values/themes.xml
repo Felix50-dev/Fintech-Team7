@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Original AppCompat attributes. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="android:colorBackground">@color/white_</item>
+        <!--<item name="colorError">@color/red_50</item>-->
+
+        <!-- New MaterialComponents attributes. -->
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnBackground">@color/white</item>
+        <!--<item name="colorOnError">@color/red_900</item>-->
+        <item name="colorOnSurface">@color/black</item>
+
+        <item name="scrimBackground">@color/white_</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--<item name="android:navigationBarColor">@android:color/transparent</item>-->
+
+        <!-- Customize your theme here. -->
+
+
+    </style>
+
+    <style name="TextAppearance.App.Hint" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/black_</item>
+    </style>
+
+    <style name="TextAppearance.App.Helper" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/black_</item>
+    </style>
+
+    <style name="TextAppearance.App.Input" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/black_</item>
+    </style>
+
+    <style name="TextAppearance.App.Prefix" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/black_</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="TextAppearance.App.Error" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/black_</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.Button.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ToolbarTheme.TitleText" parent="TextAppearance.Material3.ActionBar.Title">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
