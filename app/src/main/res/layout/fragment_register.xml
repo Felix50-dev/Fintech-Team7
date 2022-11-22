@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.views.fragments.RegisterFragment"
+    android:background="@color/white_">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/appImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/fieldsLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/animation" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fieldsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/nextButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appImage">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/emailFieldLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCollapsedPaddingTop="5dp"
+                    app:boxStrokeColor="@color/yellow_light"
+                    app:helperText="@string/email_helper"
+                    app:helperTextTextAppearance="@style/TextAppearance.App.Helper"
+                    app:helperTextTextColor="@color/black_"
+                    app:hintTextAppearance="@style/TextAppearance.App.Hint"
+                    app:prefixTextAppearance="@style/TextAppearance.App.Prefix"
+                    app:errorTextAppearance="@style/TextAppearance.App.Error"
+                    app:hintTextColor="@color/black_"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/emailField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="@style/TextAppearance.App.Input" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/lastnameFieldLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/lastname"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCollapsedPaddingTop="5dp"
+                    app:boxStrokeColor="@color/yellow_light"
+                    app:hintTextAppearance="@style/TextAppearance.App.Hint"
+                    app:prefixTextAppearance="@style/TextAppearance.App.Prefix"
+                    app:errorTextAppearance="@style/TextAppearance.App.Error"
+                    app:layout_constraintTop_toBottomOf="@+id/emailFieldLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lastnameField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="@style/TextAppearance.App.Input" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/firstnameFieldLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/firstname"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCollapsedPaddingTop="5dp"
+                    app:boxStrokeColor="@color/yellow_light"
+                    app:hintTextAppearance="@style/TextAppearance.App.Hint"
+                    app:prefixTextAppearance="@style/TextAppearance.App.Prefix"
+                    app:errorTextAppearance="@style/TextAppearance.App.Error"
+                    app:layout_constraintTop_toBottomOf="@+id/lastnameFieldLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/firstnameField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="@style/TextAppearance.App.Input" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sexFieldLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/sex"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCollapsedPaddingTop="5dp"
+                    app:boxStrokeColor="@color/yellow_light"
+                    app:hintTextAppearance="@style/TextAppearance.App.Hint"
+                    app:prefixTextAppearance="@style/TextAppearance.App.Prefix"
+                    app:errorTextAppearance="@style/TextAppearance.App.Error"
+                    app:layout_constraintTop_toBottomOf="@+id/firstnameFieldLayout">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/sexField"
+                        style="@style/Base.Widget.MaterialComponents.AutoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/black_arrow_drop_down"
+                        android:dropDownAnchor="@+id/sexFieldLayout"
+                        android:dropDownHeight="100dp"
+                        android:inputType="none"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="3dp"
+                        android:textAppearance="@style/TextAppearance.App.Input" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/nextButton"
+                style="?attr/materialIconButtonFilledStyle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/yellow_light"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:padding="0dp"
+                app:icon="@drawable/white_arrow_forward"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="25dp"
+                app:iconTint="@color/black_"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fieldsLayout"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Button.Circle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

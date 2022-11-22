@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">momoPay</string>
+
+    <string name="login">Login</string>
+
+    <string name="register">Register</string>
+    <string name="no_account">Don\'t have an account?</string>
+
+    <string name="log_in">Log In</string>
+    <string name="have_account">Already have an account?</string>
+
+    <string name="phone">Phone</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="app_description">We replace your mobile money account with a simpler, more secure and confidential payment method.</string>
+
+    <string name="get_started">Get Started</string>
+    <string name="already_have_account">I already have an account</string>
+
+    <string name="resend">Resend</string>
+    <string name="no_otp">Didn\'t receive any code?</string>
+
+    <string name="continue_with_phone">Continue with Phone</string>
+    <string name="verify_phone">Verify Phone</string>
+
+    <string name="email">Email</string>
+    <string name="lastname">Lastname</string>
+    <string name="firstname">Firstname</string>
+    <string name="sex">Sex</string>
+
+    <string name="secure_with_pin">Secure with Pin</string>
+
+    <string name="enter_pin">Enter your code</string>
+    <string name="define_pin">Define your code</string>
+    <string name="confirm_pin">Confirm your code</string>
+
+    <string name="clear">Clear</string>
+
+    <string name="email_helper">Don\'t have an email? Leave this field empty</string>
+
+    <string name="invalid_phone_error">Invalid phone number</string>
+    <string name="invalid_email_error">Invalid email</string>
+    <string name="empty_lastname_error">Fill this field</string>
+    <string name="empty_firstname_error">Fill this field</string>
+    <string name="empty_sex_error">Select a sex</string>
+
+</resources>
